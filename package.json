@@ -1,12 +1,15 @@
 {
-  "name": "backend",
+  "name": "ai-tradebot-chrome-extension",
   "version": "1.0.0",
-  "description": "Of course! Here's a concise and structured README.md description for your project:",
-  "main": "api.js",
+  "description": "AI-powered trading bot Chrome extension",
+  "main": "src/scripts/background.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "keywords": []
+  "dependencies": {
+    "@alpacahq/alpaca-trade-api": "^2.16.1",
+    "openai": "^3.2.1"
+  }
 }

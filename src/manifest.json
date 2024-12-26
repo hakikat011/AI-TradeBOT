@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "AI-TradeBOT",
+  "version": "1.0.0",
+  "description": "AI-powered trading bot Chrome extension",
+  "permissions": [
+    "storage",
+    "alarms",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://twitter.com/*"
+  ],
+  "background": {
+    "service_worker": "scripts/background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "ui/popup.html"
+  }
+} 
