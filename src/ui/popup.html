@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI-TradeBOT</title>
     <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-    <div id="app">
-        <h1>AI-TradeBOT</h1>
-        <div class="controls">
-            <button id="runNow">Run Trading Bot</button>
-        </div>
-        <div class="status">
-            <p id="lastRun">Last run: Never</p>
-            <p id="status">Status: Idle</p>
-        </div>
+    <div class="container">
+        <header>
+            <h1>AI-TradeBOT</h1>
+        </header>
+        <main>
+            <div class="status-container">
+                <h2>Bot Status</h2>
+                <p id="botStatus">Idle</p>
+            </div>
+            <div class="actions-container">
+                <button id="runNow" class="btn btn-primary">Run Trading Bot</button>
+            </div>
+        </main>
     </div>
-    <script src="popup.js" type="module"></script>
+    <script src="popup.js"></script>
 </body>
 </html> 
