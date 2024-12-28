@@ -71,34 +71,6 @@ AI-TradeBOT runs every weekday at 10:00 AM Eastern Time. It scrapes tweets, anal
 ### **Manual Mode**
 Want more control? Open the extension popup and click "Run Now" to trigger the bot instantly. It’s great for those “what if” moments.
 
----
-
-## **Project Structure**
-
-Here’s how everything is organized:
-
-```plaintext
-src/
-├── scripts/
-│   ├── background.js         # Handles background tasks like scheduling.
-│   ├── trading-logic.js      # Contains the trading decision-making logic.
-│   ├── twitter-scraper.js    # Handles tweet scraping.
-├── ui/
-│   ├── popup.html            # The extension’s popup interface.
-│   ├── popup.js              # JavaScript for the popup UI.
-│   ├── popup.css             # Styles for the popup.
-├── config/
-│   ├── config.js             # Manages environment variables.
-│   ├── credentials.env       # Stores API credentials.
-├── utils/
-│   ├── alpaca-api.js         # Helper for Alpaca API interactions.
-│   ├── sentiment-analysis.js # Handles AI sentiment analysis.
-manifest.json                 # Chrome extension metadata.
-```
-
-This structure makes it easy to extend and maintain the project.
-
----
 
 ## **A Quick Heads-Up**
 
